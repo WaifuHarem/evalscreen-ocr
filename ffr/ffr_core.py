@@ -3,9 +3,6 @@ import numpy as np
 import cv2
 import re
 
-import sys
-sys.path.append("..") 
-
 from ffr.ffr_img_processing import FfrImgProcessing
 from ffr.ffr_txt_processing import FfrTxtProcessing
 from ocr import OCR
