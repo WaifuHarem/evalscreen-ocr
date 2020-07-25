@@ -1,7 +1,7 @@
 import pytesseract
 
 from config import tesseract_path
-
+from .ffr.ffr_core import FfrCore
 
 
 class OCR():
