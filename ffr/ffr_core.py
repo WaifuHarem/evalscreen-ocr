@@ -90,6 +90,17 @@ class FfrCore():
         ocr_data = self.detect_text(img_data)
         txt_data = self.process_text(ocr_data)
 
+        # Draw detection boundaries in the images
+        for ocr_items, img_items in zip(ocr_data.items(), img_data.items()):
+            ocr_key, ocr_item = ocr_items
+            img_key, img_item = img_items
+
+            # This will happen only if there is a programming mistake
+            if img_key != ocr_key:
+                raise Exception(f'image key != ocr key; img_key = {img_key}, ocr_key = {ocr_key}')
+
+            FfrImgProcessing.draw_boundary(img_item, ocr_item)
+
         return img_data, txt_data
 
 
