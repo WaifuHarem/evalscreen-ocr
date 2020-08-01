@@ -2,3 +2,4 @@
 /config.py
 /.vscode/*
 /venv/*
+/unit_tests/data/ffr/results/*
