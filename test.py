@@ -1,7 +1,7 @@
 import unittest
 
+from unit_tests.test_font_renderer import TestFontRenderer
 from unit_tests.test_ffr import TestFFR
-
 
 
 # Override function so that stdout output is not polluted with 
