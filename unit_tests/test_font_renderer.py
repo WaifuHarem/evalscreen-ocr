@@ -19,3 +19,5 @@ class TestFontRenderer(unittest.TestCase):
             img = FontRenderer.render_ttf(text, fontpath, font_size, color)
             cv2.imshow('font', img)
             cv2.waitKey(500)
+        
+        cv2.destroyAllWindows()
