@@ -4,7 +4,7 @@ import json
 import os
 
 from core.render import FontRenderer
-from ocr import OCR
+from core.ocr import OCR
 
 from ffr.ffr_core import FfrCore
 from ffr.ffr_img_processing import FfrImgProcessing

@@ -3,9 +3,10 @@ import numpy as np
 import cv2
 import re
 
+from core.ocr import OCR
 from ffr.ffr_img_processing import FfrImgProcessing
 from ffr.ffr_txt_processing import FfrTxtProcessing
-from ocr import OCR
+
 
 
 class FfrCore():
